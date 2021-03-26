@@ -2,12 +2,44 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
-    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Peter Stewart aka PeaStew</Authors>
+    <Description>Horizen Fullnode API in .NET Standard 2.1
+Interacts with a Horizen full node, supports RPC 2.0 allowing batching of commands.
+-- Does not interact with the miniming RPC calls yet</Description>
+    <Company>Zen Blockchain Foundation</Company>
+    <RepositoryUrl>https://github.com/HorizenOfficial/Horizen.FullNode.API.Net.Standard</RepositoryUrl>
+    <PackageIcon>Horizen-Logomark-PNG-1024x1024.png</PackageIcon>
+    <PackageLicenseExpression></PackageLicenseExpression>
+    <Copyright>Copyright (c) 2021 Horizen - Zen Blockchain Foundation</Copyright>
+    <PackageTags>Horizen Zencash Blockchain ZEN PeaStew Cryptocurrency</PackageTags>
+    <PackageProjectUrl>https://horizen.io</PackageProjectUrl>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>PeaStew_Horizen.pfx</AssemblyOriginatorKeyFile>
+    <Version>1.0.4</Version>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Updated package depdencies
+Updated Licence file copyright year
+Added nuget link to readme file</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
-    <PackageReference Include="StreamJsonRpc" Version="2.4.48" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="StreamJsonRpc" Version="2.7.76" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="E:\Dropbox\Dropbox\Private\UltimateNodes\Horizen_Brand_Assets\Logomark\Horizen-Logomark-PNG-1024x1024.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
